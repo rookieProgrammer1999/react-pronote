@@ -41,4 +41,7 @@ textarea{
     background-color: grey;
     width: 450px 950px;
     max-width: fit-content;
+    font-weight: bold;
+    box-shadow: 5px 5px 25px black;
+
 }

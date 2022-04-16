@@ -8,25 +8,28 @@ class Editor extends Component {
         this.handleChange = this.handleChange.bind(this);
 
         this.state =
-         { 
+        {
             value: ''
         };
     }
-    handleChange(e){
-        this.setState({value: e.target.value});
+    handleChange(e) {
+        this.setState({ value: e.target.value });
     }
     render() {
         return (
-        <div className="container">
-            <div className="input">
-                <h3>Input</h3>
-                <textarea rows={40} cols={95} className="input-text" onChange={this.handleChange} defaultValue={this.state.value}/>
+            <div className="container">
+                <div className="input">
+                    <h3>Input</h3>
+                    <textarea rows={ 40 } cols={ 95 } className="input-text" onChange={ this.handleChange } defaultValue={ this.state.value } />
+                </div>
+                <div className="output">
+                    <h3>Pro Note</h3>
+                    {/* <div className="output-text"> */ }
+                    <textarea rows={ 40 } cols={ 95 } className="output-text" defaultValue={ this.state.value } disabled />
+                    {/* { this.state.value } */ }
+                    {/* </div> */ }
+                </div>
             </div>
-            <div className="output">
-                <h3>Pro Note</h3>
-                <div className="output-text">{this.state.value}</div>
-            </div>                
-        </div>
         );
     }
 }
