@@ -1,0 +1,44 @@
+body{
+    background-color: #388daa;
+    color: white;
+    font-family: sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+div{
+    margin:auto;
+}
+
+.input{
+grid-column: 1;
+}
+
+textarea{
+    /* rows:450; */
+    /* column-span: 450; */
+    outline: none;
+    /* resize: none; */
+    padding: 5px;
+    background-color: #388daa;
+    color:white;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+
+/* .input div{
+    border: 2px solid black;
+    border-radius: 5px;
+} */
+
+.output div{
+    grid-column: 2;
+}
+
+.output-text{
+    background-color: grey;
+    width: 450px 950px;
+    max-width: fit-content;
+}
